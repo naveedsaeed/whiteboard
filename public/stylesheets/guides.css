@@ -1,0 +1,36 @@
+.space-guides {
+  position: absolute;
+  height: auto;
+  width: auto;
+  z-index: 5000;
+  pointer-events: none !important;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px; }
+  .space-guides table {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    table-layout: auto;
+    border-collapse: separate;
+    border-spacing: 50px 0px; }
+    .space-guides table .column td {
+      border: 1px solid rgba(40, 140, 215, 0.6); }
+    .space-guides table .margin-top td,
+    .space-guides table .margin-bottom td {
+      border-top: none;
+      border-bottom: none;
+      border-right: 1px solid rgba(40, 140, 215, 0.125);
+      border-left: 1px solid rgba(40, 140, 215, 0.125);
+      height: 50px; }
+    .space-guides table.no-gutter .margin-top td:first-child,
+    .space-guides table.no-gutter .margin-bottom td:first-child {
+      border-left: 1px solid rgba(40, 140, 215, 0.125); }
+    .space-guides table.no-gutter .column td,
+    .space-guides table.no-gutter .margin-top td,
+    .space-guides table.no-gutter .margin-bottom td {
+      border-left: none; }

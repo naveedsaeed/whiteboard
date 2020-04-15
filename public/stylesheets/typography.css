@@ -1,0 +1,282 @@
+#font,
+#style {
+  top: 0px; }
+  #font .select-list,
+  #style .select-list {
+    background-color: transparent; }
+
+#font .font-header {
+  background: rgba(0, 0, 0, 0.025); }
+
+#font #font-search {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.0125);
+  position: relative; }
+  #font #font-search .input {
+    padding-left: 25px; }
+
+#font .select-list li {
+  font-size: 20px; }
+  #font .select-list li:hover > span {
+    padding-right: 40px; }
+  #font .select-list li:hover .fav-toggle {
+    display: block; }
+    #font .select-list li:hover .fav-toggle:hover {
+      opacity: 1;
+      color: white; }
+  #font .select-list li .fav-toggle {
+    color: #888;
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 0; }
+    #font .select-list li .fav-toggle:before {
+      height: 38px !important;
+      line-height: 38px !important; }
+
+#font .tabs-switcher {
+  padding: 15px 20px;
+  padding-bottom: 0; }
+  #font .tabs-switcher ul {
+    display: table;
+    width: 100%;
+    padding: 0; }
+  #font .tabs-switcher li {
+    display: table-cell;
+    color: #222;
+    border-right: 2px solid transparent;
+    background-color: rgba(0, 0, 0, 0.1);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box; }
+    #font .tabs-switcher li span {
+      padding: 8px 10px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 10px;
+      display: block;
+      cursor: pointer; }
+    #font .tabs-switcher li:first-child {
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
+      padding-left: 6px; }
+    #font .tabs-switcher li:last-child {
+      padding-right: 6px;
+      border-top-right-radius: 30px;
+      border-bottom-right-radius: 30px;
+      border: none; }
+    #font .tabs-switcher li.active {
+      background-color: rgba(0, 0, 0, 0.25);
+      color: #f5f5f5; }
+
+#typography #format {
+  top: 54px;
+  /*  As of August 2012, only supported in Chrome 21+ */
+  display: -webkit-flex;
+  flex-direction: column; }
+  #typography #format .select-list {
+    background-color: transparent; }
+  #typography #format .overflow-y-scroll {
+    flex: 1;
+    position: relative; }
+  #typography #format .actions {
+    padding: 15px 20px;
+    height: 80px; }
+
+#typography .btn-more,
+#typography .btn-less {
+  position: absolute; }
+  #typography .btn-more:active .icon,
+  #typography .btn-less:active .icon {
+    opacity: 1; }
+  #typography .btn-more .icon,
+  #typography .btn-less .icon {
+    color: white;
+    opacity: 0.2; }
+
+#typography #alignment {
+  padding-top: 10px; }
+
+#typography #styles {
+  padding-bottom: 10px; }
+
+#typography #font-style,
+#typography #font-face {
+  padding: 10px; }
+
+#typography #font-face {
+  padding-bottom: 0; }
+
+#typography #font-style {
+  padding-top: 0; }
+
+#typography #type-ratio {
+  margin: auto;
+  padding-top: 20px;
+  width: 100%;
+  text-align: center;
+  position: relative; }
+  #typography #type-ratio:before, #typography #type-ratio:after {
+    content: " ";
+    display: table; }
+  #typography #type-ratio:after {
+    clear: both; }
+  #typography #type-ratio #type-ratio-toggle {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin-left: -30px;
+    opacity: 0.25; }
+    #typography #type-ratio #type-ratio-toggle:hover {
+      opacity: 0.4; }
+  #typography #type-ratio #font-size > label {
+    right: 0px;
+    text-align: center; }
+  #typography #type-ratio #font-size > .icon {
+    right: 0px; }
+  #typography #type-ratio #font-size .btn-more, #typography #type-ratio #font-size .btn-less {
+    left: 0px; }
+  #typography #type-ratio #line-height > label {
+    left: 0px;
+    text-align: center; }
+  #typography #type-ratio #line-height > .icon {
+    left: 0px; }
+  #typography #type-ratio #line-height .btn-more, #typography #type-ratio #line-height .btn-less {
+    right: 0px; }
+  #typography #type-ratio #font-size {
+    text-align: right; }
+  #typography #type-ratio #font-size .form-group {
+    padding-right: 0px; }
+  #typography #type-ratio #line-height {
+    text-align: left; }
+  #typography #type-ratio #line-height .form-group {
+    padding-left: 0px; }
+  #typography #type-ratio #font-size,
+  #typography #type-ratio #line-height {
+    display: inline-block;
+    width: 50%; }
+    #typography #type-ratio #font-size .fader,
+    #typography #type-ratio #line-height .fader {
+      position: relative;
+      height: 140px;
+      width: 40px;
+      display: inline-block;
+      background-color: rgba(0, 0, 0, 0.25);
+      border-radius: 30px;
+      margin: 2px;
+      margin-bottom: 15px; }
+      #typography #type-ratio #font-size .fader .fader-constraint,
+      #typography #type-ratio #line-height .fader .fader-constraint {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 20px;
+        bottom: 20px;
+        cursor: -webkit-grab;
+        cursor: -moz-grab; }
+        #typography #type-ratio #font-size .fader .fader-constraint:active,
+        #typography #type-ratio #line-height .fader .fader-constraint:active {
+          cursor: -webkit-grabbing;
+          cursor: -moz-grabbing; }
+      #typography #type-ratio #font-size .fader .fader-indicator,
+      #typography #type-ratio #line-height .fader .fader-indicator {
+        background-color: #288cd7;
+        border-radius: 30px;
+        width: 40px;
+        position: absolute;
+        bottom: 0px;
+        margin: 0px;
+        padding-bottom: 40px;
+        pointer-events: none;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box; }
+      #typography #type-ratio #font-size .fader .fader-selector,
+      #typography #type-ratio #line-height .fader .fader-selector {
+        cursor: ns-resize;
+        position: absolute;
+        margin-top: -22px;
+        pointer-events: none; }
+      #typography #type-ratio #font-size .fader .fader-selector:active .value,
+      #typography #type-ratio #line-height .fader .fader-selector:active .value {
+        color: #f5f5f5; }
+    #typography #type-ratio #font-size .form-group,
+    #typography #type-ratio #line-height .form-group {
+      margin-bottom: 7px; }
+    #typography #type-ratio #font-size .btn-more,
+    #typography #type-ratio #line-height .btn-more {
+      top: 0px; }
+    #typography #type-ratio #font-size .btn-less,
+    #typography #type-ratio #line-height .btn-less {
+      bottom: 60px; }
+    #typography #type-ratio #font-size .value,
+    #typography #type-ratio #line-height .value {
+      cursor: ns-resize;
+      height: 44px;
+      line-height: 44px;
+      display: block;
+      width: 100px;
+      padding: 0 16px;
+      font-size: 16px;
+      font-size: 22px;
+      color: #888;
+      position: absolute;
+      text-align: center;
+      top: 0px; }
+
+#typography #tracking {
+  text-align: center;
+  white-space: nowrap;
+  position: relative; }
+  #typography #tracking .a,
+  #typography #tracking .b {
+    font-size: 22px;
+    display: inline-block;
+    color: #888;
+    width: 32px;
+    height: 60px;
+    line-height: 60px;
+    vertical-align: middle;
+    opacity: 0.4; }
+  #typography #tracking .arrow-left,
+  #typography #tracking .arrow-right {
+    background-color: #888;
+    height: 2px;
+    width: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    opacity: 0.4;
+    position: relative; }
+    #typography #tracking .arrow-left:after,
+    #typography #tracking .arrow-right:after {
+      content: "";
+      position: absolute;
+      top: -4px;
+      right: 0;
+      margin: 0;
+      width: 0;
+      height: 0;
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent;
+      pointer-events: none !important; }
+  #typography #tracking .arrow-left:after {
+    right: 100%;
+    border-right-color: #888; }
+  #typography #tracking .arrow-right:after {
+    left: 100%;
+    border-left-color: #888; }
+  #typography #tracking .value {
+    background-color: #222;
+    cursor: ew-resize;
+    height: 60px;
+    width: 26px;
+    left: 50%;
+    margin-left: -13px;
+    line-height: 60px;
+    display: inline-block;
+    font-size: 22px;
+    color: #888;
+    position: absolute;
+    bottom: 0px; }
+    #typography #tracking .value:active {
+      color: #f5f5f5; }

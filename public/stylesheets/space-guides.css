@@ -1,0 +1,37 @@
+#space-helpers {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; }
+  #space-helpers .guides {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 5000;
+    pointer-events: none !important; }
+    #space-helpers .guides table {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      table-layout: auto;
+      border-collapse: separate;
+      border-spacing: 50px 0px; }
+      #space-helpers .guides table .column td {
+        border: 1px solid rgba(40, 140, 215, 0.6); }
+      #space-helpers .guides table .margin-top td,
+      #space-helpers .guides table .margin-bottom td {
+        border-top: none;
+        border-bottom: none;
+        border-right: 1px solid rgba(40, 140, 215, 0.125);
+        border-left: 1px solid rgba(40, 140, 215, 0.125);
+        height: 50px; }
+      #space-helpers .guides table.no-gutter .margin-top td:first-child,
+      #space-helpers .guides table.no-gutter .margin-bottom td:first-child {
+        border-left: 1px solid rgba(40, 140, 215, 0.125); }
+      #space-helpers .guides table.no-gutter .column td,
+      #space-helpers .guides table.no-gutter .margin-top td,
+      #space-helpers .guides table.no-gutter .margin-bottom td {
+        border-left: none; }

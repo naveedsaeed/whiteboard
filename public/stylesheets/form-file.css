@@ -1,0 +1,9 @@
+.file {
+  display: inline-block !important;
+  overflow: hidden;
+  cursor: pointer; }
+  .file input {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    position: absolute; }

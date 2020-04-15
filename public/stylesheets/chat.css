@@ -1,0 +1,93 @@
+#chat-functions {
+  position: absolute;
+  bottom: 0px;
+  right: 0px; }
+  #chat-functions .btn {
+    display: block;
+    margin-top: -10px;
+    margin-left: -10px; }
+
+#chat #chat-message-new {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  display: table;
+  min-height: 60px; }
+  #chat #chat-message-new label {
+    vertical-align: middle;
+    display: table-cell;
+    font-size: 0px; }
+    #chat #chat-message-new label textarea {
+      display: inline-block;
+      width: 100%;
+      min-height: 90px;
+      padding-right: 50px;
+      font-size: 14px;
+      line-height: 1.5 !important;
+      font-weight: 300; }
+
+#chat .overflow-y-scroll {
+  bottom: 100px !important; }
+
+#chat #chat-messages {
+  width: 100%;
+  padding: 0px; }
+  #chat #chat-messages li {
+    display: block;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-left: 60px;
+    min-height: 60px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+
+#new-comment {
+  margin-bottom: 20px; }
+
+.comments {
+  padding: 0;
+  padding-top: 10px;
+  margin-bottom: 0;
+  font-size: 16px !important;
+  font-family: Avenir W01 !important;
+  list-style: none;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px; }
+  .comments > li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 0px; }
+    .comments > li:last-child {
+      border: none; }
+  .comments .comment-author {
+    pointer-events: none;
+    position: relative;
+    display: block;
+    color: #292929;
+    font-size: 11px; }
+    .comments .comment-author .btn-icon {
+      position: absolute;
+      left: -40px;
+      top: -20px; }
+  .comments .comment-meta {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 11px !important; }
+    .comments .comment-meta li {
+      margin-right: 10px;
+      display: inline-block; }
+      .comments .comment-meta li.pull-right {
+        margin-right: 0px;
+        margin-left: 10px; }
+      .comments .comment-meta li > a {
+        vertical-align: middle;
+        display: inline-block;
+        color: #989898; }
+      .comments .comment-meta li a {
+        opacity: 0.5; }
+        .comments .comment-meta li a:hover {
+          color: #3d9ee9; }

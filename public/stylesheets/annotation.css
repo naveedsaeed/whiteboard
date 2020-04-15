@@ -1,0 +1,85 @@
+.article-annotations {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  font-size: 13px;
+  line-height: 20px;
+  margin-left: 100px; }
+  .article-annotations .disclaimer {
+    opacity: 0.5;
+    font-size: 13px;
+    line-height: 20px; }
+  .article-annotations [contentEditable=true] {
+    font-size: 13px;
+    line-height: 20px; }
+  .article-annotations .annotation-item-body,
+  .article-annotations .annotation-reply-body {
+    /* Non standard for webkit */
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto; }
+  .article-annotations .annotation-group {
+    width: 250px;
+    margin-top: -2px; }
+    .article-annotations .annotation-group .annotation-group-toggle {
+      position: absolute;
+      top: -15px;
+      right: 100%;
+      margin-right: 20px;
+      opacity: 0.25; }
+    .article-annotations .annotation-group .annotation-item {
+      margin-bottom: 3.33333px;
+      padding-bottom: 2.5px; }
+    .article-annotations .annotation-group .annotation-create-item .annotation-replies,
+    .article-annotations .annotation-group .annotation-create-item .annotation-item-body,
+    .article-annotations .annotation-group .annotation-item .annotation-replies,
+    .article-annotations .annotation-group .annotation-item .annotation-item-body {
+      position: relative;
+      margin-left: 44px; }
+    .article-annotations .annotation-group .annotation-create-item .annotation-link,
+    .article-annotations .annotation-group .annotation-item .annotation-link {
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin: -7px;
+      opacity: 0.5; }
+    .article-annotations .annotation-group .annotation-create-item .annotation-author,
+    .article-annotations .annotation-group .annotation-item .annotation-author {
+      position: relative;
+      color: #222;
+      font-weight: bold; }
+      .article-annotations .annotation-group .annotation-create-item .annotation-author img,
+      .article-annotations .annotation-group .annotation-item .annotation-author img {
+        position: absolute;
+        top: 0;
+        right: 100%;
+        margin-right: 11px;
+        margin-top: 2px;
+        pointer-events: none; }
+    .article-annotations .annotation-group .annotation-create-item .annotation-replies,
+    .article-annotations .annotation-group .annotation-item .annotation-replies {
+      font-size: 11px;
+      line-height: 15px; }
+      .article-annotations .annotation-group .annotation-create-item .annotation-replies .annotation-create-reply,
+      .article-annotations .annotation-group .annotation-create-item .annotation-replies .annotation-reply,
+      .article-annotations .annotation-group .annotation-item .annotation-replies .annotation-create-reply,
+      .article-annotations .annotation-group .annotation-item .annotation-replies .annotation-reply {
+        margin-bottom: 3.33333px; }
+        .article-annotations .annotation-group .annotation-create-item .annotation-replies .annotation-create-reply:first-child,
+        .article-annotations .annotation-group .annotation-create-item .annotation-replies .annotation-reply:first-child,
+        .article-annotations .annotation-group .annotation-item .annotation-replies .annotation-create-reply:first-child,
+        .article-annotations .annotation-group .annotation-item .annotation-replies .annotation-reply:first-child {
+          margin-top: 3.33333px; }
+        .article-annotations .annotation-group .annotation-create-item .annotation-replies .annotation-create-reply:last-of-type,
+        .article-annotations .annotation-group .annotation-create-item .annotation-replies .annotation-reply:last-of-type,
+        .article-annotations .annotation-group .annotation-item .annotation-replies .annotation-create-reply:last-of-type,
+        .article-annotations .annotation-group .annotation-item .annotation-replies .annotation-reply:last-of-type {
+          margin-bottom: 0px; }
+        .article-annotations .annotation-group .annotation-create-item .annotation-replies .annotation-create-reply .annotation-reply-body,
+        .article-annotations .annotation-group .annotation-create-item .annotation-replies .annotation-reply .annotation-reply-body,
+        .article-annotations .annotation-group .annotation-item .annotation-replies .annotation-create-reply .annotation-reply-body,
+        .article-annotations .annotation-group .annotation-item .annotation-replies .annotation-reply .annotation-reply-body {
+          position: relative;
+          margin-left: 37px; }

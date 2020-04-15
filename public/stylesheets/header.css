@@ -1,0 +1,107 @@
+.header-center,
+.header-left,
+.header-right {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  z-index: 3000;
+  top: 10px; }
+  .header-center > *,
+  .header-left > *,
+  .header-right > * {
+    display: inline-block;
+    vertical-align: middle; }
+  .header-center.out,
+  .header-left.out,
+  .header-right.out {
+    opacity: 0;
+    pointer-events: none; }
+    .header-center.out *,
+    .header-left.out *,
+    .header-right.out * {
+      pointer-events: none !important; }
+
+.home {
+  margin-top: -20px;
+  margin-left: -20px; }
+
+.header-left {
+  -webkit-transform-origin: center left;
+  -moz-transform-origin: center left;
+  -ms-transform-origin: center left;
+  transform-origin: center left;
+  left: 0;
+  padding-left: 10px; }
+
+.header-right {
+  -webkit-transform-origin: center right;
+  -moz-transform-origin: center right;
+  -ms-transform-origin: center right;
+  transform-origin: center right;
+  right: 0;
+  padding-right: 10px; }
+
+.header-center {
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  width: 100%;
+  left: 0;
+  right: 0;
+  position: absolute;
+  text-align: center;
+  color: #888; }
+  .header-center > * {
+    font-size: 20px;
+    line-height: 44px;
+    color: #888;
+    padding: 0 10px; }
+
+.header-left > * {
+  margin-right: 10px; }
+
+.header-right > * {
+  margin-left: 5px; }
+
+.header-right {
+  font-size: 0; }
+
+.title {
+  width: 100%;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  pointer-events: none; }
+  .title h1 {
+    margin: 0;
+    height: 60px;
+    line-height: 60px;
+    font-size: 13.5px;
+    font-weight: bold;
+    color: #888;
+    display: inline-block;
+    margin-top: -14px;
+    pointer-events: all;
+    font-weight: normal; }
+
+.author {
+  float: left; }
+  .author .btn {
+    margin-right: 10px; }
+  .author .author-date {
+    opacity: 0.5; }
+
+.present-mode #space-header {
+  background-color: transparent !important; }
+
+#space-siblings {
+  background-color: rgba(245, 245, 245, 0.95);
+  padding: 35px;
+  max-height: 450px;
+  overflow-y: scroll;
+  margin-top: 54px;
+  border-bottom: 1px solid #eee; }
+  #space-siblings .btn {
+    margin-bottom: 50px; }

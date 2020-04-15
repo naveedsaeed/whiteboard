@@ -1,0 +1,97 @@
+#editors, #editors-list {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none; }
+  #editors h6, #editors-list h6 {
+    padding: 15px 25px;
+    margin: 0px;
+    color: #888;
+    font-size: 10px; }
+  #editors ul, #editors-list ul {
+    padding: 0px;
+    margin: 0px; }
+    #editors ul li:nth-child(1) .editor-avatar, #editors-list ul li:nth-child(1) .editor-avatar {
+      background-color: #4a2f7e; }
+    #editors ul li:nth-child(2) .editor-avatar, #editors-list ul li:nth-child(2) .editor-avatar {
+      background-color: #9b59b6; }
+    #editors ul li:nth-child(3) .editor-avatar, #editors-list ul li:nth-child(3) .editor-avatar {
+      background-color: #3498db; }
+    #editors ul li:nth-child(4) .editor-avatar, #editors-list ul li:nth-child(4) .editor-avatar {
+      background-color: #2ecc71; }
+    #editors ul li:nth-child(5) .editor-avatar, #editors-list ul li:nth-child(5) .editor-avatar {
+      background-color: #f1c40f; }
+    #editors ul li:nth-child(6) .editor-avatar, #editors-list ul li:nth-child(6) .editor-avatar {
+      background-color: #e67e22; }
+    #editors ul li:nth-child(7) .editor-avatar, #editors-list ul li:nth-child(7) .editor-avatar {
+      background-color: #d55c4b; }
+    #editors ul li:nth-child(8) .editor-avatar, #editors-list ul li:nth-child(8) .editor-avatar {
+      background-color: #6f4021; }
+    #editors ul li:nth-child(9) .editor-avatar, #editors-list ul li:nth-child(9) .editor-avatar {
+      background-color: #ffffff; }
+    #editors ul li:nth-child(10) .editor-avatar, #editors-list ul li:nth-child(10) .editor-avatar {
+      background-color: #95a5a6; }
+    #editors ul li:nth-child(11) .editor-avatar, #editors-list ul li:nth-child(11) .editor-avatar {
+      background-color: #252525; }
+
+#invite-message {
+  height: 117px !important; }
+
+.editor > a,
+.editor > span {
+  text-align: left;
+  border-radius: 3px;
+  display: block;
+  position: relative;
+  min-height: 60px;
+  border: none; }
+  .editor > a .editor-avatar,
+  .editor > span .editor-avatar {
+    margin-top: 7px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 15px;
+    float: left;
+    color: white !important; }
+    .editor > a .editor-avatar.status-off:before, .editor > a .editor-avatar.status-on:before,
+    .editor > span .editor-avatar.status-off:before,
+    .editor > span .editor-avatar.status-on:before {
+      top: 0;
+      right: 0;
+      display: block;
+      position: absolute;
+      color: #292929;
+      border: 1px solid #292929;
+      border-radius: 100px;
+      padding: 4px;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0px;
+      height: 4px;
+      width: 4px; }
+    .editor > a .editor-avatar.status-off:before,
+    .editor > span .editor-avatar.status-off:before {
+      background-color: #d55c4b;
+      content: "off";
+      display: none; }
+    .editor > a .editor-avatar.status-on:before,
+    .editor > span .editor-avatar.status-on:before {
+      background-color: #2ecc71;
+      content: "on"; }
+  .editor > a .editor-email,
+  .editor > a .editor-name,
+  .editor > span .editor-email,
+  .editor > span .editor-name {
+    font-family: Avenir W01;
+    font-size: 13px;
+    line-height: 1.4;
+    display: block;
+    font-weight: 300;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #888; }
+  .editor > a .editor-email,
+  .editor > span .editor-email {
+    opacity: 0.5; }

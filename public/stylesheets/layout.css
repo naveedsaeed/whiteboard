@@ -1,0 +1,23 @@
+#layout #align .btn-group {
+  height: 120px;
+  width: 180px;
+  position: relative; }
+  #layout #align .btn-group .btn {
+    position: absolute;
+    display: inline-block; }
+    #layout #align .btn-group .btn.top {
+      top: 0px;
+      left: 50%;
+      margin-left: -30px; }
+    #layout #align .btn-group .btn.bottom {
+      bottom: 0px;
+      left: 50%;
+      margin-left: -30px; }
+    #layout #align .btn-group .btn.left {
+      left: 0px;
+      top: 50%;
+      margin-top: -30px; }
+    #layout #align .btn-group .btn.right {
+      right: 0px;
+      top: 50%;
+      margin-top: -30px; }

@@ -1,0 +1,16 @@
+.input-select {
+  border-radius: 3px;
+  display: inline-block;
+  width: 100%; }
+
+@-moz-document url-prefix() {
+  select.input {
+    background-repeat: no-repeat;
+    background-position: right center;
+    cursor: pointer; } }
+
+select {
+  -webkit-appearance: none;
+  appearance: none;
+  padding-left: 0px;
+  width: 100%; }

@@ -1,0 +1,51 @@
+.ruler {
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px dotted #e17878;
+  background-clip: padding-box;
+  z-index: 5;
+  cursor: ns-resize; }
+  .ruler .ruler-value {
+    display: inline-block;
+    background-color: #3d9ee9;
+    background-color: #e17878;
+    color: white;
+    font-size: 11px;
+    line-height: 1;
+    position: absolute;
+    text-align: center;
+    opacity: 0; }
+  .ruler:hover .ruler-value {
+    opacity: 1; }
+  .ruler.horz {
+    top: 50px;
+    width: 100%;
+    border-bottom: 1px dotted #e17878;
+    height: 1px;
+    cursor: ns-resize; }
+    .ruler.horz:hover {
+      border-bottom-style: solid; }
+    .ruler.horz .ruler-value {
+      left: 250px;
+      top: 0;
+      border-bottom-left-radius: 60px;
+      border-bottom-right-radius: 60px;
+      width: 40px;
+      height: 40px;
+      line-height: 40px; }
+  .ruler.vert {
+    left: 50px;
+    height: 100%;
+    border-left: 1px dotted #e17878;
+    width: 1px;
+    cursor: ew-resize; }
+    .ruler.vert:hover {
+      border-left-style: solid; }
+    .ruler.vert .ruler-value {
+      left: 0;
+      top: 250px;
+      border-top-right-radius: 60px;
+      border-bottom-right-radius: 60px;
+      height: 40px;
+      width: 40px;
+      line-height: 40px; }

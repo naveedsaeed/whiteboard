@@ -1,0 +1,210 @@
+#presentation-previous,
+#presentation-next {
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  position: absolute;
+  top: 50%;
+  margin: 10px;
+  margin-top: -30px;
+  pointer-events: none;
+  opacity: 0;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.05);
+  color: #222;
+  z-index: 1000; }
+  #presentation-previous:active,
+  #presentation-next:active {
+    -webkit-transition: all 0s ease-in-out;
+    transition: all 0s ease-in-out; }
+
+#presentation-previous {
+  left: 0; }
+
+#presentation-next {
+  right: 0; }
+
+#properties {
+  position: absolute;
+  right: 0px;
+  padding: 10px;
+  font-size: 0px;
+  white-space: nowrap;
+  height: 100%;
+  pointer-events: none;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  perspective: 1000; }
+  #properties .panel-toggles {
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+    display: inline-block;
+    vertical-align: middle; }
+    #properties .panel-toggles > div {
+      background-color: #222 !important;
+      color: #f5f5f5;
+      border-radius: 3px;
+      font-size: 0px; }
+    #properties .panel-toggles > div > * {
+      height: 0px;
+      display: block !important;
+      overflow: hidden;
+      -webkit-transition: height 0.125s ease-in-out;
+      transition: height 0.125s ease-in-out; }
+    #properties .panel-toggles > div > .in {
+      pointer-events: auto;
+      cursor: pointer;
+      height: 60px; }
+  #properties .panels {
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin-right: 10px; }
+    #properties .panels .panel-wrap {
+      display: table;
+      position: absolute;
+      height: 100%;
+      right: 0px;
+      pointer-events: none;
+      -webkit-transform: scale(0, 0);
+      -ms-transform: scale(0, 0);
+      transform: scale(0, 0);
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -o-user-select: none;
+      user-select: none;
+      -webkit-transform-origin: center right;
+      -moz-transform-origin: center right;
+      -ms-transform-origin: center right;
+      transform-origin: center right;
+      -webkit-transition: all 0.125s ease-in-out;
+      transition: all 0.125s ease-in-out; }
+      #properties .panels .panel-wrap.active {
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        transform: scale(1, 1); }
+        #properties .panels .panel-wrap.active .panel > div {
+          -webkit-transform: rotateX(0deg);
+          -ms-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+          pointer-events: auto !important; }
+      #properties .panels .panel-wrap .panel {
+        display: table-cell;
+        vertical-align: middle;
+        -webkit-perspective: 1000;
+        -moz-perspective: 1000;
+        -ms-perspective: 1000;
+        perspective: 1000;
+        z-index: 1000;
+        -webkit-perspective-origin: center right;
+        -moz-perspective-origin: center right;
+        perspective-origin: center right;
+        pointer-events: none; }
+        #properties .panels .panel-wrap .panel > div {
+          -webkit-transform: rotateY(-90deg);
+          -ms-transform: rotateY(-90deg);
+          transform: rotateY(-90deg);
+          -webkit-transform-origin: center right;
+          -moz-transform-origin: center right;
+          -ms-transform-origin: center right;
+          transform-origin: center right;
+          -webkit-backface-visibility: hidden;
+          -moz-backface-visibility: hidden;
+          backface-visibility: hidden;
+          /* Other transform properties here */
+          pointer-events: none;
+          -webkit-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+          position: relative;
+          background-color: #222 !important;
+          color: #f5f5f5;
+          border-radius: 3px; }
+          #properties .panels .panel-wrap .panel > div .section {
+            border-top: 2px solid rgba(0, 0, 0, 0.1);
+            padding: 12px;
+            text-align: center;
+            min-width: 200px; }
+            #properties .panels .panel-wrap .panel > div .section .label-sm {
+              margin-bottom: 0px !important;
+              pointer-events: none; }
+            #properties .panels .panel-wrap .panel > div .section .label-sm + input {
+              margin-top: -8px !important; }
+            #properties .panels .panel-wrap .panel > div .section .label-sm + .btn-group {
+              margin-top: -8px !important; }
+            #properties .panels .panel-wrap .panel > div .section .input {
+              height: 45px;
+              line-height: 45px; }
+
+#property-rotate {
+  overflow: hidden;
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out; }
+  #property-rotate.inactive {
+    width: 0px; }
+
+#selection-tools {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.unit {
+  font-family: 'open sans', sans-serif;
+  font-size: 9px;
+  margin-left: 3px;
+  text-transform: uppercase;
+  display: none; }
+
+#tools {
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  position: absolute;
+  left: 0px;
+  padding: 10px;
+  font-size: 0;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10; }
+  #tools > .btn-group {
+    background-color: #222 !important;
+    color: #f5f5f5;
+    border-radius: 3px;
+    pointer-events: auto;
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+    font-size: 0px;
+    text-align: center;
+    font-size: 0px;
+    line-height: 0px; }
+    #tools > .btn-group:before, #tools > .btn-group:after {
+      content: " ";
+      display: table; }
+    #tools > .btn-group:after {
+      clear: both; }
+    #tools > .btn-group .btn {
+      display: block; }
+    #tools > .btn-group .btn.btn-divider {
+      min-height: 2px;
+      min-width: 60px;
+      width: 60px;
+      height: 2px !important;
+      padding: 0px;
+      background-color: rgba(0, 0, 0, 0.1);
+      margin: -1px 0;
+      opacity: 1;
+      z-index: 1000;
+      position: relative; }

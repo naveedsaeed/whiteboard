@@ -1,0 +1,60 @@
+#pattern #background-position {
+  height: 210px;
+  position: relative; }
+  #pattern #background-position .position-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    border: 2px solid #222;
+    border-radius: 4px;
+    margin: -50px -60px; }
+    #pattern #background-position .position-icon .radio {
+      position: absolute;
+      display: inline-block; }
+      #pattern #background-position .position-icon .radio.top-left {
+        top: -30px;
+        left: 0;
+        margin-left: -30px; }
+      #pattern #background-position .position-icon .radio.top-center {
+        top: -30px;
+        left: 50%;
+        margin-left: -30px; }
+      #pattern #background-position .position-icon .radio.top-right {
+        top: -30px;
+        right: 0;
+        margin-right: -30px; }
+      #pattern #background-position .position-icon .radio.center-left {
+        top: 50%;
+        margin-top: -30px;
+        left: 0;
+        margin-left: -30px; }
+      #pattern #background-position .position-icon .radio.center-center {
+        top: 50%;
+        margin-top: -30px;
+        left: 50%;
+        margin-left: -30px; }
+      #pattern #background-position .position-icon .radio.center-right {
+        top: 50%;
+        margin-top: -30px;
+        right: 0;
+        margin-right: -30px; }
+      #pattern #background-position .position-icon .radio.bottom-left {
+        bottom: 0;
+        margin-bottom: -30px;
+        left: 0;
+        margin-left: -30px; }
+      #pattern #background-position .position-icon .radio.bottom-center {
+        bottom: 0;
+        margin-bottom: -30px;
+        left: 50%;
+        margin-left: -30px; }
+      #pattern #background-position .position-icon .radio.bottom-right {
+        bottom: 0;
+        margin-bottom: -30px;
+        right: 0;
+        margin-right: -30px; }
+  #pattern #background-position .icon-label {
+    pointer-events: none;
+    margin-top: 62px; }

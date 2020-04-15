@@ -1,0 +1,84 @@
+@charset "UTF-8";
+#search-dialog:after {
+  margin-left: -160px; }
+
+.dialog-search {
+  margin-left: 0;
+  transform: translate3d(-22.5%, 0%, 100px) scale(1) !important; }
+
+.dialog-search-input {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 112px;
+  color: #888;
+  padding: 25px;
+  background-color: rgba(245, 245, 245, 0.95);
+  border-top-left-radius: 9px;
+  z-index: 100; }
+
+.dialog-search-results {
+  padding: 40px !important;
+  padding-top: 110px !important;
+  margin-right: 92px;
+  position: relative;
+  font-size: 11px;
+  line-height: 1.5;
+  text-align: left !important; }
+  .dialog-search-results:before, .dialog-search-results:after {
+    content: " ";
+    display: table; }
+  .dialog-search-results:after {
+    clear: both; }
+  .dialog-search-results .search-result  {
+    max-width: 100px; }
+  .dialog-search-results > * {
+    cursor: pointer; }
+    .dialog-search-results > * > * {
+      pointer-events: none; }
+  .dialog-search-results .search-result-video {
+    width: 33%;
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 20px; }
+    .dialog-search-results .search-result-video:nth-child(3n+1) {
+      clear: both; }
+    .dialog-search-results .search-result-video .thumbnail-wrapper:hover .thumbnail {
+      opacity: 0.8; }
+    .dialog-search-results .search-result-video .thumbnail-wrapper span {
+      display: block;
+      top: 0;
+      left: 0;
+      position: absolute;
+      background-color: #3d9ee9;
+      color: #f5f5f5;
+      text-align: center; }
+      .dialog-search-results .search-result-video .thumbnail-wrapper span:before {
+        content: "";
+        display: block;
+        padding-top: 100%;
+        /* initial ratio of 1:1*/
+        padding-top: 55%; }
+    .dialog-search-results .search-result-video .thumbnail {
+      width: 100%;
+      margin-bottom: 10px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 3px; }
+      .dialog-search-results .search-result-video .thumbnail:before {
+        content: "";
+        display: block;
+        padding-top: 100%;
+        /* initial ratio of 1:1*/
+        padding-top: 55%; }
+  .dialog-search-results .search-result-image {
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 8px; }
+    .dialog-search-results .search-result-image img {
+      height: 100%;
+      max-width: 120px;
+      max-height: 120px;
+      border-radius: 3px; }

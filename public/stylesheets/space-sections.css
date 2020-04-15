@@ -1,0 +1,345 @@
+.confirm {
+  position: relative;
+  z-index: 100;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out; }
+  .confirm.open .confirmation {
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 1;
+    pointer-events: auto; }
+    .confirm.open .confirmation .btn {
+      color: white; }
+  .confirm .confirmation {
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    -webkit-transform: scale(0.8, 0.8);
+    -ms-transform: scale(0.8, 0.8);
+    transform: scale(0.8, 0.8);
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding-top: 18px !important; }
+    .confirm .confirmation .btn-cluster {
+      border-radius: 3px;
+      border-radius: 60px !important;
+      background-color: #ff5955; }
+
+.spacedeck-logo {
+  font-size: 20px;
+  line-height: 44px;
+  color: #292929;
+  padding-left: 0.5em;
+  padding-right: 10px; }
+  .spacedeck-logo.white {
+    color: #f5f5f5; }
+
+.version-date {
+  text-align: left;
+  display: block !important;
+  line-height: 1.8;
+  padding-left: 10px !important; }
+
+.present-mode #space {
+  margin-bottom: 0px; }
+
+.present-mode .column-border,
+.present-mode .section-empty,
+.present-mode .section-selected,
+.present-mode .section-padding-corner,
+.present-mode .section-padding,
+.present-mode .section-border {
+  display: none !important; }
+
+.present-mode .artifact iframe, .present-mode .artifact a, .present-mode .artifact video, .present-mode .artifact audio {
+  pointer-events: all !important; }
+
+.present-mode .artifact .link-wrapper, .present-mode .artifact a.link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  opacity: 0;
+  height: 100%;
+  margin-top: 0; }
+
+.present-mode .artifact .oembed-cloak {
+  display: none; }
+
+.background-image,
+.cover-image {
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  position: relative; }
+  .background-image .updating-image,
+  .cover-image .updating-image {
+    background-color: rgba(233, 233, 233, 0.9); }
+
+#offline-indicator {
+  pointer-events: none;
+  opacity: 0;
+  transition: all 1s linear;
+  -webkit-transition: all 1s linear; }
+  #offline-indicator.offline {
+    opacity: 1;
+    pointer-events: all; }
+
+.embedded.board {
+  overflow: hidden !important; }
+
+.board {
+  padding: 0 !important;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  overflow: scroll;
+  /** {
+    -moz-user-select: none !important; // firefox has selection problems
+  }*/ }
+  .board .wrapper {
+    border: 1px dotted rgba(128, 128, 128, 0.5);
+    transition-duration: 0.25s;
+    transition-property: width, height, background-color;
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+.snap-ruler-h {
+  pointer-events: none;
+  position: fixed;
+  z-index: 0;
+  right: 0px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 0px; }
+
+.snap-ruler-v {
+  pointer-events: none;
+  position: fixed;
+  z-index: 0;
+  top: 0px;
+  bottom: 0px;
+  width: 1px;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.cursor {
+  position: absolute;
+  z-index: 3000;
+  pointer-events: none; }
+  .cursor .icon {
+    margin-left: -12px;
+    margin-top: -3px;
+    margin-right: -6px; }
+
+.present-mode .artifact:hover:before, .present-mode .artifact:hover:after {
+  display: none !important; }
+
+.table .wrapper,
+.article .wrapper {
+  max-width: 800px;
+  min-height: 100%; }
+  .table .wrapper .content,
+  .article .wrapper .content {
+    min-height: 100%;
+    padding-bottom: 60px;
+    padding-top: 60px; }
+
+.article img {
+  max-width: 100%; }
+
+.table .table-wrapper {
+  max-width: 100%;
+  position: relative;
+  width: auto;
+  margin-left: -18px;
+  margin-right: -18px;
+  margin-top: -18px;
+  margin-bottom: -18px; }
+
+.table table {
+  width: 100%;
+  table-layout: auto;
+  border-collapse: separate;
+  border-spacing: 18px 18px; }
+
+.table tr {
+  border-top: 1px solid rgba(255, 255, 255, 0.125); }
+
+.table td,
+.table th {
+  border: none;
+  vertical-align: top;
+  text-align: left; }
+
+.section .wrapper {
+  position: absolute; }
+
+#space {
+  /*-webkit-user-select: all;
+  -ms-user-select: all;
+  -moz-user-select: all;
+  user-select: all;*/
+  position: relative;
+  height: 100% !important;
+  background-color: #eee; }
+
+#made-with {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  padding: 12px;
+  opacity: 0.25; }
+  #made-with a {
+    color: #222; }
+  #made-with p {
+    text-align: center;
+    font-size: 11px; }
+
+#baseline {
+  position: absolute;
+  width: 100%;
+  pointer-events: none;
+  z-index: 10000;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  opacity: 0.05;
+  top: 0;
+  display: none; }
+  #baseline li {
+    height: 6px;
+    border-bottom: 1px solid #3d9ee9; }
+
+#space-header .item-meta {
+  color: #888; }
+  #space-header .item-meta .item-social {
+    float: right;
+    padding-right: 8px;
+    color: #888; }
+    #space-header .item-meta .item-social .item-likes.active .icon-heart {
+      color: #ff5955; }
+    #space-header .item-meta .item-social .item-likes,
+    #space-header .item-meta .item-social .item-comments,
+    #space-header .item-meta .item-social .item-shares {
+      position: relative;
+      cursor: pointer; }
+      #space-header .item-meta .item-social .item-likes .number,
+      #space-header .item-meta .item-social .item-comments .number,
+      #space-header .item-meta .item-social .item-shares .number {
+        width: auto; }
+
+.space-bounds {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  pointer-events: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: white; }
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translate(2px, 1px) rotate(0deg); }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+  30% {
+    -webkit-transform: translate(0px, 2px) rotate(0deg); }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg); }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+  70% {
+    -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+  90% {
+    -webkit-transform: translate(2px, 2px) rotate(0deg); }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg); } }
+
+@-webkit-keyframes section-appear {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+#minimap {
+  background-color: transparent;
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  z-index: 20000;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  overflow: hidden; }
+  #minimap div {
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    z-index: 1;
+    pointer-events: none; }
+  #minimap div.window {
+    background-color: rgba(255, 255, 255, 0.01);
+    border: 1px solid rgba(255, 255, 255, 0.5); }
+
+.pro-teaser-colorpicker {
+  background-image: image-url("images/pro-teaser-colorpicker.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+  text-align: center; }
+  .pro-teaser-colorpicker p {
+    padding: 30px;
+    padding-bottom: 110px;
+    background-color: rgba(255, 255, 255, 0.8); }
+  .pro-teaser-colorpicker button {
+    margin-top: 40px; }
+
+.jewel-pro {
+  color: white !important;
+  background-color: #3d9ee9 !important;
+  top: -5px !important;
+  right: -5px !important; }
+
+.disabled-pro {
+  opacity: 0.7; }
+
+#space-loading {
+  position: fixed;
+  z-index: 10000;
+  display: table;
+  width: 200px;
+  height: 200px;
+  left: 50%;
+  top: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
+  background-color: white;
+  border-radius: 100px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease-out; }
+  #space-loading > div {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center; }
+  #space-loading .spinner {
+    background-image: url("/images/hourglass.gif"); }
+  #space-loading.active {
+    opacity: 1; }

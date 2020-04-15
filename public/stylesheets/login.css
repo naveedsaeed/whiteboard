@@ -1,0 +1,70 @@
+#account-forms {
+  z-index: 2000;
+  width: 100%;
+  height: 100%; }
+  #account-forms.got-user {
+    display: none; }
+  #account-forms > div {
+    display: table;
+    width: 100%;
+    height: 100%;
+    position: absolute !important;
+    pointer-events: none; }
+    #account-forms > div.active#login form {
+      -webkit-transform: rotateY(0deg);
+      -ms-transform: rotateY(0deg);
+      transform: rotateY(0deg); }
+    #account-forms > div.active#signup form {
+      -webkit-transform: rotateY(0deg);
+      -ms-transform: rotateY(0deg);
+      transform: rotateY(0deg); }
+    #account-forms > div.active#password-reset form {
+      -webkit-transform: rotateY(0deg);
+      -ms-transform: rotateY(0deg);
+      transform: rotateY(0deg); }
+    #account-forms > div.active#password-confirm form {
+      -webkit-transform: rotateY(0deg);
+      -ms-transform: rotateY(0deg);
+      transform: rotateY(0deg); }
+    #account-forms > div.active form {
+      opacity: 1;
+      pointer-events: auto; }
+    #account-forms > div .content {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      -webkit-perspective: 1000;
+      -moz-perspective: 1000;
+      -ms-perspective: 1000;
+      perspective: 1000;
+      -webkit-perspective-origin: center center;
+      -moz-perspective-origin: center center;
+      perspective-origin: center center; }
+    #account-forms > div#login form {
+      -webkit-transform: rotateY(-180deg);
+      -ms-transform: rotateY(-180deg);
+      transform: rotateY(-180deg); }
+    #account-forms > div#signup form {
+      -webkit-transform: rotateY(180deg);
+      -ms-transform: rotateY(180deg);
+      transform: rotateY(180deg); }
+    #account-forms > div#password form {
+      -webkit-transform: rotateY(180deg);
+      -ms-transform: rotateY(180deg);
+      transform: rotateY(180deg); }
+    #account-forms > div form {
+      text-align: left;
+      display: inline-block;
+      width: 330px;
+      opacity: 0;
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -webkit-transition: all 0.25s ease-in-out;
+      transition: all 0.25s ease-in-out;
+      -webkit-transform-origin: center center;
+      -moz-transform-origin: center center;
+      -ms-transform-origin: center center;
+      transform-origin: center center; }
+      #account-forms > div form h4 {
+        display: inline-block; }

@@ -1,0 +1,473 @@
+.artifact {
+  position: relative;
+  /*&.artifact-text.text-blank [contentEditable=true]:not(.text-editing) p:first-child::after {
+    content: "Double click to edit";
+    opacity: 0.25;
+  }
+
+  &.artifact-text.text-blank [contentEditable=true].text-editing p:first-child::after {
+    content: "Type here";
+    opacity: 0.25;
+  }*/
+  /*&.vector {
+    pointer-events: none;
+    div, svg {
+      pointer-events: none;
+    }
+
+    svg * {
+      pointer-events: painted;
+    }
+  }*/ }
+  .artifact iframe {
+    width: 100% !important;
+    display: block;
+    max-height: 100%; }
+  .artifact.hide-text .text {
+    opacity: 0; }
+  .artifact.locked.selected {
+    box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.5) !important; }
+  .artifact .placeholder .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -22px; }
+  .artifact.artifact-text.text-blank p:first-child br {
+    display: none; }
+  .artifact .link-wrapper {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    display: block;
+    text-align: center;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin-top: -3em; }
+  .artifact .edit {
+    position: absolute;
+    top: 10px;
+    right: 10px; }
+  .artifact .ios-focuser {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    opacity: 0;
+    z-index: 0; }
+  .artifact .text {
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    height: 100%; }
+  .artifact:not(.artifact-text) .text-column:not(.text-editing):empty {
+    display: none !important; }
+  .artifact.x-spacedeck-shape .clip {
+    height: 100%; }
+  .artifact .shape {
+    position: absolute; }
+  .artifact .text-table {
+    display: table;
+    width: 100%;
+    height: 100%; }
+    .artifact .text-table .text-cell {
+      display: table-cell;
+      position: relative;
+      height: 100%; }
+      .artifact .text-table .text-cell .text-column {
+        width: 100%;
+        -webkit-line-break: after-white-space;
+        display: block;
+        word-wrap: break-word;
+        line-height: 1.5em;
+        font-size: 18px; }
+        .artifact .text-table .text-cell .text-column.text-editing {
+          min-height: 18px;
+          -webkit-user-select: auto;
+          -moz-user-select: auto;
+          user-select: auto;
+          pointer-events: auto; }
+          .artifact .text-table .text-cell .text-column.text-editing * {
+            -webkit-user-select: auto;
+            -moz-user-select: auto;
+            user-select: auto; }
+        .artifact .text-table .text-cell .text-column p:last-child,
+        .artifact .text-table .text-cell .text-column ul:last-child {
+          margin-bottom: 0em !important; }
+        .artifact .text-table .text-cell .text-column h1,
+        .artifact .text-table .text-cell .text-column h2,
+        .artifact .text-table .text-cell .text-column li {
+          margin-top: 0;
+          margin-bottom: 0.5em; }
+          .artifact .text-table .text-cell .text-column h1:last-child,
+          .artifact .text-table .text-cell .text-column h2:last-child,
+          .artifact .text-table .text-cell .text-column li:last-child {
+            margin-bottom: 0em !important; }
+        .artifact .text-table .text-cell .text-column h1 {
+          line-height: 1.1; }
+        .artifact .text-table .text-cell .text-column h2 {
+          font-size: 40px;
+          line-height: 1.1; }
+        .artifact .text-table .text-cell .text-column h3 {
+          font-size: 30px;
+          line-height: 1.1; }
+        .artifact .text-table .text-cell .text-column h4 {
+          font-size: 20px;
+          line-height: 1.1; }
+        .artifact .text-table .text-cell .text-column blockquote {
+          font-size: inherit;
+          font-weight: inherit;
+          margin-left: 20px;
+          margin-right: 20px; }
+        .artifact .text-table .text-cell .text-column h3,
+        .artifact .text-table .text-cell .text-column h4,
+        .artifact .text-table .text-cell .text-column h5,
+        .artifact .text-table .text-cell .text-column ul,
+        .artifact .text-table .text-cell .text-column p {
+          margin-top: 0;
+          margin-bottom: 0.5em; }
+          .artifact .text-table .text-cell .text-column h3:last-child,
+          .artifact .text-table .text-cell .text-column h4:last-child,
+          .artifact .text-table .text-cell .text-column h5:last-child,
+          .artifact .text-table .text-cell .text-column ul:last-child,
+          .artifact .text-table .text-cell .text-column p:last-child {
+            margin-bottom: 0em !important; }
+        .artifact .text-table .text-cell .text-column a {
+          pointer-events: none; }
+        .artifact .text-table .text-cell .text-column ol {
+          padding: 0;
+          counter-reset: list-counter; }
+          .artifact .text-table .text-cell .text-column ol li {
+            list-style: none;
+            position: relative;
+            padding-left: 1em;
+            counter-increment: list-counter;
+            font-size: inherit; }
+            .artifact .text-table .text-cell .text-column ol li:before {
+              color: inherit;
+              top: 0;
+              left: 0;
+              content: counter(list-counter);
+              position: absolute; }
+        .artifact .text-table .text-cell .text-column ul {
+          padding: 0; }
+          .artifact .text-table .text-cell .text-column ul li {
+            list-style: none;
+            position: relative;
+            padding-left: 1em;
+            font-size: inherit; }
+            .artifact .text-table .text-cell .text-column ul li:before {
+              color: inherit;
+              top: 0;
+              left: 0;
+              content: "\2022";
+              position: absolute; }
+        .artifact .text-table .text-cell .text-column li,
+        .artifact .text-table .text-cell .text-column p {
+          -webkit-hyphens: auto;
+          -moz-hyphens: auto;
+          -ms-hyphens: auto;
+          -o-hyphens: auto;
+          hyphens: auto; }
+        .artifact .text-table .text-cell .text-column * {
+          -webkit-backface-visibility: visible;
+          -moz-backface-visibility: visible;
+          -ms-backface-visibility: visible;
+          backface-visibility: visible; }
+        .artifact .text-table .text-cell .text-column > * {
+          display: block; }
+  .artifact .oembed,
+  .artifact div[class*='oembed-'] {
+    height: 100%; }
+    .artifact .oembed .play,
+    .artifact div[class*='oembed-'] .play {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -30px;
+      z-index: 100;
+      background-color: #f5f5f5 !important;
+      color: #292929 !important; }
+    .artifact .oembed .meta,
+    .artifact div[class*='oembed-'] .meta {
+      padding-top: 10px;
+      font-size: 10px;
+      display: block;
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      z-index: 100;
+      color: #888;
+      text-align: left; }
+      .artifact .oembed .meta .link,
+      .artifact div[class*='oembed-'] .meta .link {
+        position: absolute;
+        left: -12px;
+        bottom: -4px; }
+      .artifact .oembed .meta .description,
+      .artifact div[class*='oembed-'] .meta .description {
+        padding-left: 28px;
+        display: block; }
+    .artifact .oembed iframe,
+    .artifact div[class*='oembed-'] iframe {
+      width: 100% !important;
+      height: 100% !important; }
+    .artifact .oembed:not(.interactive) iframe,
+    .artifact div[class*='oembed-']:not(.interactive) iframe {
+      pointer-events: none; }
+    .artifact .oembed .title,
+    .artifact div[class*='oembed-'] .title {
+      font-size: 20px; }
+    .artifact .oembed .image,
+    .artifact div[class*='oembed-'] .image {
+      height: auto;
+      top: 0;
+      bottom: 0px;
+      position: absolute;
+      width: 100%; }
+    .artifact .oembed .interact,
+    .artifact div[class*='oembed-'] .interact {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -30px;
+      margin-top: -30px; }
+  .artifact .image {
+    height: 100%;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .artifact .image video {
+      width: 100%;
+      height: 100%; }
+  .artifact .video {
+    width: 100%;
+    height: 100%;
+    background-size: cover; }
+    .artifact .video .title {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      z-index: 1;
+      color: #888;
+      background-color: white;
+      display: block;
+      width: 100%;
+      padding: 10px 15px;
+      font-size: 10px; }
+    .artifact .video video {
+      width: 100%;
+      height: 100%; }
+    .artifact .video .tl-controls {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      right: 10px;
+      text-align: center; }
+      .artifact .video .tl-controls .btn {
+        margin-top: 20px; }
+  .artifact .audio {
+    height: 100%; }
+    .artifact .audio .timeline {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      bottom: 54px;
+      background-size: 100% 100%;
+      cursor: crosshair;
+      margin-bottom: 10px;
+      overflow: hidden; }
+      .artifact .audio .timeline .tl-current-time {
+        height: 100%;
+        background: white;
+        opacity: 0.5;
+        border-right: 1px solid #888; }
+      .artifact .audio .timeline .tl-inpoint {
+        width: 1px;
+        bottom: 0px;
+        background: #333;
+        position: absolute;
+        top: 0px;
+        z-index: 1; }
+      .artifact .audio .timeline .tl-outpoint {
+        width: 1px;
+        bottom: 0px;
+        background: #333;
+        position: absolute;
+        top: 0px;
+        z-index: 2; }
+    .artifact .audio .tl-controls {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      right: 10px;
+      text-align: center; }
+      .artifact .audio .tl-controls .btn {
+        margin-top: 20px; }
+    .artifact .audio .tl-title {
+      margin-left: 10px;
+      max-width: 55%;
+      overflow: hidden;
+      display: inline-block;
+      max-height: 2em;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin-top: -18px;
+      margin-bottom: -18px;
+      margin-right: 10px; }
+  .artifact img {
+    width: 100%;
+    height: 100%; }
+  .artifact.bold {
+    font-weight: bold; }
+  .artifact.italic {
+    font-style: italic; }
+  .artifact.underline {
+    text-decoration: underline; }
+  .artifact.strike {
+    text-decoration: line-through; }
+  .artifact.align-top .text-cell {
+    vertical-align: top; }
+  .artifact.align-middle .text-cell {
+    vertical-align: middle; }
+  .artifact.align-bottom .text-cell {
+    vertical-align: bottom; }
+  .artifact.align-left {
+    text-align: left; }
+  .artifact.align-center {
+    text-align: center; }
+  .artifact.align-right {
+    text-align: right; }
+  .artifact.align-justify {
+    text-align: justify; }
+  .artifact audio {
+    width: 100%; }
+
+.board .artifact {
+  position: absolute;
+  color: black;
+  white-space: normal;
+  font-size: 18px; }
+  .board .artifact.artifact-zone {
+    border: 1px solid #2ecc71;
+    background-color: rgba(46, 204, 113, 0.025);
+    border-radius: 10px; }
+    .board .artifact.artifact-zone:after {
+      display: none; }
+    .board .artifact.artifact-zone .shape {
+      display: none; }
+    .board .artifact.artifact-zone .zone {
+      height: 100%; }
+
+body.present-mode #space .artifact-zone {
+  display: none; }
+
+body.present-mode #space .artifact {
+  cursor: default !important; }
+  body.present-mode #space .artifact .text a {
+    pointer-events: auto !important; }
+
+body:not(.present-mode) #space .Medium {
+  cursor: text; }
+
+body:not(.present-mode) #space .artifact.selected.text-editing, body:not(.present-mode) #space .artifact.text-editing {
+  cursor: text; }
+  body:not(.present-mode) #space .artifact.selected.text-editing:before, body:not(.present-mode) #space .artifact.text-editing:before {
+    border: 1px solid rgba(255, 255, 255, 0.25); }
+  body:not(.present-mode) #space .artifact.selected.text-editing:after, body:not(.present-mode) #space .artifact.text-editing:after {
+    border: 1px dotted rgba(40, 140, 215, 0.5);
+    background-color: transparent !important; }
+
+body:not(.present-mode) #space .artifact.selected {
+  cursor: -webkit-grab;
+  cursor: -moz-grab; }
+  body:not(.present-mode) #space .artifact.selected:active {
+    cursor: -webkit-grabbing;
+    cursor: -moz-grabbing; }
+  body:not(.present-mode) #space .artifact.selected:not(.artifact-vector):after {
+    border: 1px solid #288cd7; }
+
+.mouse-scribble, .tool-scribble, .tool-line, .tool-arrow {
+  cursor: crosshair !important; }
+  .mouse-scribble .artifact, .tool-scribble .artifact, .tool-line .artifact, .tool-arrow .artifact {
+    pointer-events: none !important; }
+  .mouse-scribble .artifact:after, .mouse-scribble .artifact:before, .tool-scribble .artifact:after, .tool-scribble .artifact:before, .tool-line .artifact:after, .tool-line .artifact:before, .tool-arrow .artifact:after, .tool-arrow .artifact:before {
+    display: none !important; }
+
+.tool-pan {
+  cursor: grab !important; }
+
+.artifact.state-idle .progress, .artifact.state-idle .progress-text {
+  display: none; }
+
+.artifact.state-processing, .artifact.state-uploading {
+  background-color: white; }
+  .artifact.state-processing .progress, .artifact.state-uploading .progress {
+    height: 100%;
+    padding: 10px;
+    background-color: #3d9ee9;
+    opacity: 0.9;
+    text-align: center; }
+  .artifact.state-processing .progress-text, .artifact.state-uploading .progress-text {
+    text-align: center;
+    padding: 8px;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    color: #888;
+    font-size: 10px; }
+  .artifact.state-processing video, .artifact.state-processing audio, .artifact.state-processing .tl-controls, .artifact.state-processing .timeline, .artifact.state-uploading video, .artifact.state-uploading audio, .artifact.state-uploading .tl-controls, .artifact.state-uploading .timeline {
+    display: none; }
+
+.state-processing .spinner {
+  opacity: 1;
+  background-image: url("/images/hourglass.gif"); }
+
+.state-uploading .spinner {
+  opacity: 0.8;
+  background-image: url("/images/hourglass.gif"); }
+
+.state-idle .spinner {
+  display: none; }
+
+.artifact.image {
+  background-color: transparent; }
+  .artifact.image.state-loading {
+    background-color: rgba(40, 140, 215, 0.05); }
+  .artifact.image.state-processing {
+    background-color: rgba(107, 195, 111, 0.05); }
+
+.spinner {
+  height: 44px;
+  width: 44px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -22px;
+  border-radius: 100%;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+#pick-mobile img {
+  width: 200px; }
+
+#pick-mobile .artifact {
+  display: block;
+  width: 200px;
+  height: 150px;
+  float: left;
+  font-size: 14px;
+  line-height: 20px; }
+  #pick-mobile .artifact .text {
+    padding: 10px; }
+
+#pick-mobile .spinner {
+  display: none !important; }
+
+#pick-mobile .video {
+  height: 100%; }
+
+.icon-controls-play:before {
+  line-height: 40px !important;
+  left: 1px !important; }
